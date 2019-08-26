@@ -1,0 +1,57 @@
+db_url: jdbc:mysql://10.136.60.7:3306/doc_crawl
+
+write_log: True
+
+kafka_servers: 10.36.10.22:9092
+kafka_topic: crawler_official_document
+
+redis_host: 10.36.1.21
+redis_port: 6379
+redis_password:
+redis_max_connections: 100
+uniq_doc_id_set: body_md5_set
+uniq_url_md5_set: url_md5_set
+
+es_hosts:
+- 10.36.10.18:9201
+- 10.36.10.12:9201
+
+json_indent: 1
+
+default_settings:
+    LOG_LEVEL: DEBUG
+    ROBOTSTXT_OBEY: False
+    DOWNLOAD_DELAY: 2
+    RANDOMIZE_DOWNLOAD_DELAY: False
+    DOWNLOAD_TIMOUT: 10
+    COOKIES_ENABLED: False
+
+    CONCURRENT_REQUESTS: 50
+    CONCURRENT_REQUESTS_PER_IP: 10
+
+    RETRY_ENABLED: True
+    RETRY_TIMES: 3
+    AUTOTHROTTLE_ENABLED: True
+
+    DEFAULT_REQUEST_HEADERS:
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+        Accept-Encoding: gzip, deflate, sdch
+        Accept-Language: zh-CN,zh;q=0.8
+        Cache-Control: no-cache
+        Connection: keep-alive
+        Pragma: no-cache
+        Upgrade-Insecure-Requests: 1
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+
+    SPIDER_MIDDLEWARES:
+        src.components.middlewares.UrlFilterMiddleware: 1
+
+    DOWNLOADER_MIDDLEWARES:
+        scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware: 100
+        src.components.middlewares.ProxySpiderMiddleware: 101
+        src.components.middlewares.RandomUserAgentMiddleware: 102
+
+    ITEM_PIPELINES:
+        src.components.pipelines.ItemFilterPipeline: 100
+        src.components.pipelines.Save2FilePipeline: 101
+        src.components.pipelines.Save2KafkaPipeline: 102

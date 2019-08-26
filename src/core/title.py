@@ -47,25 +47,25 @@ def get_pages(html):
                topic_rank = each_topic.find('td', class_='first').get_text().replace(' ', '').replace('\n', '')
                topic_name = each_topic.find('td', class_='keyword').get_text().replace(' ', '').replace('\n', '').replace('search','')
                topic_times = each_topic.find('td', class_='last').get_text().replace(' ', '').replace('\n', '')
-               # print('排名：{}，标题：{}，热度：{}'.format(topic_rank,topic_name,topic_times))
+
                title_list = list()
                title_list.append(topic_rank)
                title_list.append(topic_name)
                writer.writerow(title_list)
 
-# test
-if __name__ == '__main__':
-
-    titles = list()
-    html = get_title()
-    get_pages(html)
-
-    with open('../data/title.csv', 'r', encoding='utf-8') as csvFile:
-        f_csv = csv.reader(csvFile)
-        for row in f_csv:
-            if row[1] != 'Title':
-                titles.append(row[1])
-    print(titles)
+# test part
+# if __name__ == '__main__':
+#
+#     titles = list()
+#     html = get_title()
+#     get_pages(html)
+#
+#     with open('../data/title.csv', 'r', encoding='utf-8') as csvFile:
+#         f_csv = csv.reader(csvFile)
+#         for row in f_csv:
+#             if row[1] != 'Title':
+#                 titles.append(row[1])
+#     print(titles)
 
 
 

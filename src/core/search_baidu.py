@@ -31,8 +31,13 @@ def get_docs(keyword, fn_callback, url_num=20):
             'Accept-Language': 'en,zh-CN;q=0.9,zh;q=0.8',
             'Connection': 'keep-alive',
         }
+
         url_format = "https://www.baidu.com/s?wd={}&rn={}"
         url = url_format.format(quote(_keyword), url_num)
+
+        # url_format = 'http://www.sina.com.cn/mid/search.shtml?range=all&c=news&q={}&from=home&ie=utf-8'
+        # url = url_format.format(quote(_keyword))
+
         req = requests.get(url=url, verify=False, headers=headers)
 
         if not req or not req.content:
@@ -126,4 +131,8 @@ def clean_text(raw_html, url):
 
 if __name__ == "__main__":
     fn_print = lambda x: print(x)
-    get_docs("郎朗为娇妻庆生",fn_print)
+    get_docs("黄雅琼郑思维冠军",fn_print)
+
+
+
+
