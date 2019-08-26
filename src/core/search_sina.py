@@ -32,9 +32,6 @@ def getfromSina(key):
         soup = BeautifulSoup(text, "html.parser")
 
         result = str(soup.find("div", id='artibody'))
-        print(result)
-        exit()
-
         subsoup = BeautifulSoup(result, "html.parser")
 
         lines = []
@@ -43,11 +40,12 @@ def getfromSina(key):
                 if item.name == "p":
                     if item.text:
                         lines.append(item.text)
+                        print(item.text)
+                        exit()
 
         for item in lines:
             print(item)
 
-    exit()
 
     # # 创建一个进程池 Pool
     # pool = multiprocessing.Pool(multiprocessing.cpu_count())

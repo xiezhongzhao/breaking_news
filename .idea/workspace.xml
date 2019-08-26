@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="588e60f6-f2c2-4918-92ab-1b531e3684bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/app.dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/app.prod.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/app.test.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/search_sina.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/server_mysql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/learning_scrapy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/search_article.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/search_baidu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/search_baidu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/search_title.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/title.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/title.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/title.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/search_sina.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/search_sina.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/search_sina.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="352">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -332,12 +321,12 @@
       <workItem from="1566454051354" duration="18990000" />
       <workItem from="1566555178263" duration="22643000" />
       <workItem from="1566790908491" duration="21000" />
-      <workItem from="1566791483512" duration="16310000" />
+      <workItem from="1566791483512" duration="16808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106028000" />
+    <option name="totallyTimeSpent" value="106526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1147" y="25" width="1853" height="1055" extended-state="6" />
@@ -348,7 +337,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32824427" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35824177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3868132" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3304253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -377,7 +366,7 @@
     <SUITE FILE_PATH="coverage/Breaking_News$breaking_words.coverage" NAME="breaking_words Coverage Results" MODIFIED="1566437544826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
     <SUITE FILE_PATH="coverage/Breaking_News$test.coverage" NAME="test Coverage Results" MODIFIED="1566187441869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
     <SUITE FILE_PATH="coverage/breaking_news$breaking_words.coverage" NAME="breaking_words Coverage Results" MODIFIED="1566463925418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
-    <SUITE FILE_PATH="coverage/breaking_news$search_article.coverage" NAME="search_article Coverage Results" MODIFIED="1566820395252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
+    <SUITE FILE_PATH="coverage/breaking_news$search_article.coverage" NAME="search_article Coverage Results" MODIFIED="1566821110302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/json/__init__.py">
@@ -493,8 +482,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/search_sina.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="352">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
