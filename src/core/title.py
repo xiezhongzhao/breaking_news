@@ -54,18 +54,18 @@ def get_pages(html):
                writer.writerow(title_list)
 
 # test part
-# if __name__ == '__main__':
-#
-#     titles = list()
-#     html = get_title()
-#     get_pages(html)
-#
-#     with open('../data/title.csv', 'r', encoding='utf-8') as csvFile:
-#         f_csv = csv.reader(csvFile)
-#         for row in f_csv:
-#             if row[1] != 'Title':
-#                 titles.append(row[1])
-#     print(titles)
+if __name__ == '__main__':
+
+    titles = list()
+    html = get_title()
+    get_pages(html)
+
+    with open('../data/title.csv', 'r', encoding='utf-8') as csvFile:
+        f_csv = csv.reader(csvFile)
+        for row in f_csv:
+            if row[1] != 'Title':
+                titles.append(row[1])
+    print(titles)
 
 
 
