@@ -19,7 +19,7 @@ class GetSina(object):
 
     def get_url_sina(self, key):
 
-        # key = '董明珠雷军新赌约'
+        key = 'Costco宣布将限流'
 
         url = 'http://api.search.sina.com.cn/?c=news&q={}&stime=2018-08-25&etime=2019-08-27&sort=rel&highlight=1&num=10&ie=utf-8'.format(key)
         print(url, '\n')
@@ -33,7 +33,7 @@ class GetSina(object):
 
         return content
 
-    def get_text_sina(self, content):
+    def get_text_sina(self, content, num_parts):
 
         articles_url = list()
         articles_list = list()
@@ -61,8 +61,6 @@ class GetSina(object):
 
         #将文章分为四个部分, 分别对四个部分进行信息提取
         print(len(articles_list), len(articles_list[0]))
-
-        num_parts = 4
         num_sentences = len(articles_list[0])
         step = num_sentences // num_parts
 
@@ -91,7 +89,7 @@ if __name__ == '__main__':
     content = sina.get_url_sina(title)
 
     if content:
-        articles_url, articles_list, texts = sina.get_text_sina(content)
+        articles_url, articles_list, texts = sina.get_text_sina(content, 4)
         print(articles_url, '\n')
 
         for text in texts:
