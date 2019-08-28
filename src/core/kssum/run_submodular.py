@@ -25,7 +25,7 @@ def get_summary(
         elif wlimit:
             reslist = cnsummarizer(article, words_limit=wlimit)
         else:
-            words_limit = len(unicode(article)) * ratio
+            words_limit = len(str(article)) * ratio
             words_limit = int(math.floor(words_limit))
             reslist = cnsummarizer(article, words_limit=words_limit)
     elif language.startswith('en'):

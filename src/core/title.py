@@ -11,15 +11,6 @@ def get_title():
                'Accept-Encoding' : 'gzip, deflate',
                'Accept-Language': 'en-US, en; q=0.9',
                'Connection': 'keep-alive',
-               'Cookie': 'BAIDUID=317F0C1E645392463E0FF767B8F5BA86:FG=1; '
-                         'pgv_pvi=1064096768; pgv_si=s6449092608; '
-                         'BIDUPSID=317F0C1E645392463E0FF767B8F5BA86; '
-                         'PSTM=1566468353; delPer=0; PSINO=7; '
-                         'H_PS_PSSID=1431_21111_29523_29518_29099_29568_29220; '
-                         'BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; Hm_lvt_79a0e9c520104773e13ccd072bc956aa=1566526869;'
-                         ' bdshare_firstime=1566526869708; '
-                         'BDRCVFR[z91LIEeorFR]=mk3SLVN4HKm; '
-                         'Hm_lpvt_79a0e9c520104773e13ccd072bc956aa=1566528144',
                'Host': 'top.baidu.com',
                'User-Agent': 'Mozilla/5.0'}
 
