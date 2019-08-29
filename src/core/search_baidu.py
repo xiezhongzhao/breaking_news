@@ -17,6 +17,7 @@ def baidunew_search(key):
         time = cauthor[cauthor.index("\t"):].strip()
         url = item.h3.a["href"]
         all_context.append((title,origin,time,url))
+
     pagesoup = BeautifulSoup(content, "html.parser")
     pages=pagesoup.find("p",id ="page")
     for i,item in enumerate(pages.find_all("a")):
@@ -35,5 +36,6 @@ def baidunew_search(key):
             url = item.h3.a["href"]
             all_context.append((title,origin,time,url))
     return all_context
+
 for item in baidunew_search("台风白鹿逼近闽粤"):
     print(item)

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="588e60f6-f2c2-4918-92ab-1b531e3684bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/core/search_baidu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/search_baidu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/search_sina.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/search_sina.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/title.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/title.csv" afterDir="false" />
     </list>
@@ -16,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/title.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="-589">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -28,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/search_sina.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="97" column="41" lean-forward="true" selection-start-line="97" selection-start-column="41" selection-end-line="97" selection-end-column="41" />
+            <state relative-caret-position="454">
+              <caret line="168" column="30" lean-forward="true" selection-start-line="168" selection-start-column="30" selection-end-line="168" selection-end-column="30" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -38,10 +39,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/kssum/run_submodular.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="18" />
+              <folding>
+                <element signature="e#26#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/search_baidu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="611">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -81,9 +94,9 @@
         <option value="$PROJECT_DIR$/src/core/search_article.py" />
         <option value="$PROJECT_DIR$/src/core/sina.py" />
         <option value="$PROJECT_DIR$/src/utils/server_mysql.py" />
-        <option value="$PROJECT_DIR$/src/core/search_baidu.py" />
         <option value="$PROJECT_DIR$/src/core/title.py" />
         <option value="$PROJECT_DIR$/src/core/kssum/run_submodular.py" />
+        <option value="$PROJECT_DIR$/src/core/search_baidu.py" />
         <option value="$PROJECT_DIR$/src/core/search_sina.py" />
       </list>
     </option>
@@ -299,12 +312,12 @@
       <workItem from="1566454051354" duration="18990000" />
       <workItem from="1566555178263" duration="22643000" />
       <workItem from="1566790908491" duration="21000" />
-      <workItem from="1566791483512" duration="59107000" />
+      <workItem from="1566791483512" duration="82322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148825000" />
+    <option name="totallyTimeSpent" value="172040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1147" y="25" width="1853" height="1055" extended-state="6" />
@@ -315,8 +328,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32824427" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5989011" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.25384617" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35164836" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34725276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -352,7 +365,7 @@
     <SUITE FILE_PATH="coverage/Breaking_News$breaking_words.coverage" NAME="breaking_words Coverage Results" MODIFIED="1566437544826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
     <SUITE FILE_PATH="coverage/Breaking_News$test.coverage" NAME="test Coverage Results" MODIFIED="1566187441869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
     <SUITE FILE_PATH="coverage/breaking_news$breaking_words.coverage" NAME="breaking_words Coverage Results" MODIFIED="1566463925418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
-    <SUITE FILE_PATH="coverage/breaking_news$search_article.coverage" NAME="search_article Coverage Results" MODIFIED="1567000503020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
+    <SUITE FILE_PATH="coverage/breaking_news$search_article.coverage" NAME="search_article Coverage Results" MODIFIED="1567068630438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
@@ -462,26 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/title.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/kssum/run_submodular.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="e#26#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/kssum/submodular.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -494,18 +487,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/search_baidu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="611">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/title.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-589">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/kssum/run_submodular.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#26#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/search_sina.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="97" column="41" lean-forward="true" selection-start-line="97" selection-start-column="41" selection-end-line="97" selection-end-column="41" />
+        <state relative-caret-position="454">
+          <caret line="168" column="30" lean-forward="true" selection-start-line="168" selection-start-column="30" selection-end-line="168" selection-end-column="30" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
