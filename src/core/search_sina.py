@@ -1,15 +1,18 @@
-import multiprocessing
-from bs4 import BeautifulSoup
-import pandas as pd
+#!/usr/bin/env python
+# encoding: utf-8
+
+# @Author: Xie Zhongzhao
+# @Date  : 2019-09-02 10:12:00
+
 import requests
 import warnings
 import bs4
 import json
 import jieba
 import time
-
 import csv
-from src.core.title import get_title, get_pages
+
+from bs4 import BeautifulSoup
 from src.core.kssum.run_submodular import get_summary
 
 warnings.filterwarnings('ignore')
@@ -45,9 +48,6 @@ class GetSina(object):
         :param key: 热点标题
         :return: 与热点标题有关的热点文章url
         '''
-        # key = '董明珠雷军新赌约'
-        # title = '大白菜'
-
         stime = '2000-01-01'
         etime = self.etime
 
@@ -93,12 +93,6 @@ class GetSina(object):
             except:
                 continue
 
-            # union = list(set(hot_key).union(set(title_list)))
-            # print("url: ", url)
-            # print("title_list: ", title_list)
-            # print("union: ", union)
-            # exit()
-
             if list(set(hot_key).union(set(title_list))): # 过滤与热点标题无关的文章
 
                 result = str(soup.find("div", id='artibody'))
@@ -115,8 +109,7 @@ class GetSina(object):
                 articles_list.append(essay)
 
         #将文章分为四个部分, 分别对四个部分进行信息提取
-        # print(len(articles_list), len(articles_list[0]))
-        print(articles_url)
+        # print(articles_url)
 
         article_length = [len(article) for article in articles_list]
         index = article_length.index(max(article_length))
@@ -140,14 +133,12 @@ class GetSina(object):
 
         article = list()
         for text in texts: # 次模函数进行句子抽取
-
             try:
                 extract_text = get_summary(text, language='chinese', wlimit=150, ratio=None)
             except:
                 continue
 
             if extract_text: # 次模函数返回是否为空
-
                 try:
                     extract_text = json.loads(extract_text, encoding=False)
                     extract_sentences = extract_text['result']
@@ -193,20 +184,6 @@ if __name__ == '__main__':
 
     print("num_essay: ", num_essay)
     print("Recall: %.4f"%(num_essay/len(titles)))
-
-
-
-
-
-# # 创建一个进程池 Pool
-# pool = multiprocessing.Pool(multiprocessing.cpu_count())
-#
-# # 循环次数
-# for num in range(0, 30):
-#     pool.apply_async(geturl, (url, num, key)) # 多进程
-# pool.close()
-# # 调用join之前，先调用close函数，否则会出错。执行完close后不会有新的进程加入到pool,join函数会等待所有子进程结束。
-# pool.join()
 
 
 

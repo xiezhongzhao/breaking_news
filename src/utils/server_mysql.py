@@ -147,23 +147,3 @@ class ServerMysql(object):
                 conn.close()
             return
 
-
-if __name__ == '__main__':
-    configs = {
-        'host': 'localhost',
-        'port': '3306',
-        'user': 'user',
-        'password': '88888888',
-        'database': 'webfiles',
-    }
-    table = 'web_file_test'
-    fields = ['col1', 'col2']
-    data = [tuple(range(k, k+2)) for k in range(100)]
-    handler = ServerMysql(configs)
-    handler.write_data(data=data, table=table, batch_size=100)
-    print(handler.get_fields(table))
-    print(handler.count_data(table))
-    for tmp in handler.read_data(table=table, batch_size=10, cursor_from=10, cursor_to=20):
-        print(len(tmp))
-        print(tmp)
-

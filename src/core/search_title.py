@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
+# @Author: Xie Zhongzhao
+# @Date  : 2019-09-02 10:12:00
+
 import requests
 from bs4 import BeautifulSoup
 import csv
@@ -57,15 +63,8 @@ if __name__ == '__main__':
             html = get_title(url)
             get_pages(html, csv_file)
 
-    with open('../data/title.csv', 'r', encoding='utf-8') as csvFile:
-        titles = list()
 
-        f_csv = csv.reader(csvFile)
-        for row in f_csv:
-            if row[1] != 'Title':
-                titles.append(row[1])
 
-        print(titles)
 
 
 
